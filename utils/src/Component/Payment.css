@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.payment-container {
+  margin-top:-5px;
+  padding: 2rem;
+  
+  min-height: 100vh;
+}
+
+.payment-card {
+  /* background: white; */
+  background: linear-gradient( 50deg,#f7dc85b6 0%, #f8a28ab6 100% );
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.payment-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.delivery-form {
+  flex: 1;
+  min-width: 750px;
+}
+
+.delivery-options button,
+.address-type button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  /* background: linear-gradient(135deg, #f7dc85b6, #f8a28ab6); */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.active {
+  background: #333;
+  color: white;
+}
+
+.form-fields input,
+.card-fields input,
+.payment-methods input[type="text"] {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+   
+}
+
+.payment-methods {
+  margin-top: 1.5rem;
+}
+
+.payment-methods label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.save-btn {
+  
+  background-color:rgba(255, 127, 80, 0.884) ;
+  
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.payment-summary {
+  flex: 1;
+  min-width: 300px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.cart-scroll {
+  overflow-y: auto;
+  max-height: 260px;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  /* background-color:rgba(255, 127, 80, 0.712) ; */
+}
+.cart-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-scroll::-webkit-scrollbar-thumb {
+  /* background: #ff6600; */
+  background-color:rgba(255, 127, 80, 0.712) ;
+  border-radius: 3px;
+}
+
+.item-preview {
+  display: flex;
+  align-items:center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.item-preview img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.summary-item, .summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.summary-total {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+input[type="text"][placeholder="Enter UPI ID"] {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-color: #f8a28a;
+}
+.form-fields input,
+.card-fields input,
+.payment-methods input:focus{
+outline: none;
+  border-color: #f8a28a;
+  /* box-shadow: 0 0 0 3px rgba(248, 162, 138, 0.3); */
+  /* background-color: #ffffff; */
+}
+.name{
+  display: flex;
+  gap: 5px;
+}
+.emailphone{
+        display: flex;
+         gap: 5px;
+}
+.form-fields textarea{
+  width:100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-color: #f8a28a;
+}
+.form-fields textarea:focus{
+      outline: none;
+  border-color: #f8a28a;
+}
+.validity{
+  display: flex;
+  gap: 5px;
+}
+.payment-container h2{
+  text-align: center;
+  font-weight: 600;
+  font-size:40px;
+
+}
